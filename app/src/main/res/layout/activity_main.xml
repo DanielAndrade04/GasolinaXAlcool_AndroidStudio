@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/LabeLGasolina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gasolina: "/>
+
+    <EditText
+        android:id="@+id/campoGasolina"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/LabeLGasolina"/>
+
+    <TextView
+        android:id="@+id/LabeLEtanol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Etanol: "
+        android:layout_below="@+id/campoGasolina"
+        android:layout_alignParentLeft="true"/>
+
+    <EditText
+        android:id="@+id/campoEtanol"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/LabeLEtanol"
+        android:layout_alignTop="@+id/LabeLEtanol"/>
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/campoEtanol"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:text="Calcular"/>
+
+    <TextView
+        android:id="@+id/Resultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnCalcular"
+        android:layout_marginTop="200dp"/>
+
+
+</RelativeLayout>
